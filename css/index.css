@@ -136,17 +136,19 @@ table {
   border-spacing: 0;
 }
 nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   background-color: #011627;
   padding: 2rem;
   padding-top: 0rem;
   padding-bottom: 0rem;
-  margin-bottom: 1rem;
 }
 nav .logo {
   height: 9rem;
-  margin-right: 3rem;
+  margin-right: 70%;
 }
 nav a {
   padding-top: 3.5rem;
@@ -155,6 +157,51 @@ nav a {
   text-decoration: none;
   font-family: 'Stylish', sans-serif;
   color: #FF9F1C;
+}
+nav a:hover {
+  color: #DC98B1;
+}
+.parallax {
+  height: 3456px;
+  background: url("../assets/img/concert-984237.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+.top-content {
+  background-color: #C63E60;
+  margin-top: 50rem;
+  font-family: sans-serif;
+}
+.top-content h1 {
+  font-size: 4rem;
+  margin: 2rem;
+  font-family: 'Stylish', sans-serif;
+  color: #FDFFFC;
+  text-shadow: -1px -1px 0 #DC98B1, 1px -1px 0 #DC98B1, -1px 1px 0 #DC98B1, 1px 1px 0 #DC98B1;
+}
+.top-content p {
+  font-size: 1.5rem;
+  margin: 2rem;
+  text-align: justify;
+  color: #FDFFFC;
+}
+.top-content .left-content input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: #DC98B1;
+}
+.top-content .right-content {
+  margin-left: 2rem;
+  width: 50%;
+  height: auto;
 }
 body {
   margin: 0 auto;
