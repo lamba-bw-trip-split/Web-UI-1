@@ -5,12 +5,13 @@
   z-index: 10;
 
   h1 {
+    padding-top: 5rem;
     font-size: 4rem;
     margin: 2rem;
     font-family: @main-font;
-    color: @babypowder;
-    text-shadow: -1px -1px 0 @brickred, 1px -1px 0 @brickred,
-      -1px 1px 0 @brickred, 1px 1px 0 @brickred;
+    color: @brightyellow;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black,
+      -1px 1px 0 black, 1px 1px 0 black;
   }
 
   p {
@@ -19,12 +20,14 @@
     margin: 2rem;
     text-align: justify;
     color: @babypowder;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black,
+      -1px 1px 0 black, 1px 1px 0 black;
   }
 
   .parallax {
-    height: 40rem/*3456px*/;
+    height: 50rem/*3456px*/;
     background: url("../assets/img/concert-984237.jpg");
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,24 +36,34 @@
     .left-content {
       padding: 3rem;
       width: 50%;
+
       input[type="text"] {
+        opacity: 0.7;
         width: 60%;
         padding: 1.2rem 2rem;
         margin: 0.8rem 0rem;
         margin-left: 2rem;
         display: inline-block;
-        border: 0.1rem solid @brickred;
+        border: 0.1rem solid @babypowder;
         border-radius: 0.8rem;
         box-sizing: border-box;
-        background-color: @parrotpink;
+        background-color: black;
+        color: @babypowder;
       }
+
       input[type="submit"] {
+        opacity: 0.9;
         padding: 1.2rem 2rem;
         margin: 0.8rem 0rem;
-        border: 0.1rem solid @parrotpink;
+        border: 0.2rem solid black;
         border-radius: 0.8rem;
         box-sizing: border-box;
-        background-color: @brickred;
+        background-color: @maxbluegreen;
+        color: @babypowder;
+
+        &:hover {
+          background-color: @brightyellow;
+        }
       }
     }
   }
@@ -65,8 +78,8 @@
     margin: 2rem;
     font-family: @main-font;
     color: @babypowder;
-    text-shadow: -1px -1px 0 @brickred, 1px -1px 0 @brickred,
-      -1px 1px 0 @brickred, 1px 1px 0 @brickred;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black,
+      -1px 1px 0 black, 1px 1px 0 black;
   }
 
   p {
@@ -75,9 +88,12 @@
     margin: 2rem;
     text-align: justify;
     color: @babypowder;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black,
+      -1px 1px 0 black, 1px 1px 0 black;
   }
 
   .parallax-middle {
+    // padding-top: 5rem;
     height: 40rem/*3456px*/;
     background: url("../assets/img/airport-2373727.jpg");
     background-attachment: fixed;
@@ -90,17 +106,6 @@
       // make right aligned on page
       padding: 3rem;
       width: 50%;
-      input[type="text"] {
-        width: 60%;
-        padding: 1.2rem 2rem;
-        margin: 0.8rem 0rem;
-        margin-left: 2rem;
-        display: inline-block;
-        border: 0.1rem solid @brickred;
-        border-radius: 0.8rem;
-        box-sizing: border-box;
-        background-color: @parrotpink;
-      }
     }
   }
 }

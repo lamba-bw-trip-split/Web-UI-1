@@ -156,6 +156,7 @@ nav a {
   font-size: 1rem;
   font-family: 'Stylish', sans-serif;
   color: #FF9F1C;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 nav a:hover {
   color: #DC98B1;
@@ -168,11 +169,12 @@ nav a:hover {
   z-index: 10;
 }
 .top-content h1 {
+  padding-top: 5rem;
   font-size: 4rem;
   margin: 2rem;
   font-family: 'Stylish', sans-serif;
-  color: #FDFFFC;
-  text-shadow: -1px -1px 0 #C63E60, 1px -1px 0 #C63E60, -1px 1px 0 #C63E60, 1px 1px 0 #C63E60;
+  color: #FF9F1C;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 .top-content p {
   font-size: 1.5rem;
@@ -180,11 +182,12 @@ nav a:hover {
   margin: 2rem;
   text-align: justify;
   color: #FDFFFC;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 .top-content .parallax {
-  height: 40rem /*3456px*/;
+  height: 50rem /*3456px*/;
   background: url("../assets/img/concert-984237.jpg");
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -195,23 +198,30 @@ nav a:hover {
   width: 50%;
 }
 .top-content .parallax .left-content input[type="text"] {
+  opacity: 0.7;
   width: 60%;
   padding: 1.2rem 2rem;
   margin: 0.8rem 0rem;
   margin-left: 2rem;
   display: inline-block;
-  border: 0.1rem solid #C63E60;
+  border: 0.1rem solid #FDFFFC;
   border-radius: 0.8rem;
   box-sizing: border-box;
-  background-color: #DC98B1;
+  background-color: black;
+  color: #FDFFFC;
 }
 .top-content .parallax .left-content input[type="submit"] {
+  opacity: 0.9;
   padding: 1.2rem 2rem;
   margin: 0.8rem 0rem;
-  border: 0.1rem solid #DC98B1;
+  border: 0.2rem solid black;
   border-radius: 0.8rem;
   box-sizing: border-box;
-  background-color: #C63E60;
+  background-color: #2EC4B6;
+  color: #FDFFFC;
+}
+.top-content .parallax .left-content input[type="submit"]:hover {
+  background-color: #FF9F1C;
 }
 .middle-content {
   z-index: 10;
@@ -222,7 +232,7 @@ nav a:hover {
   margin: 2rem;
   font-family: 'Stylish', sans-serif;
   color: #FDFFFC;
-  text-shadow: -1px -1px 0 #C63E60, 1px -1px 0 #C63E60, -1px 1px 0 #C63E60, 1px 1px 0 #C63E60;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 .middle-content p {
   font-family: 'Stylish', sans-serif;
@@ -230,6 +240,7 @@ nav a:hover {
   margin: 2rem;
   text-align: justify;
   color: #FDFFFC;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 .middle-content .parallax-middle {
   height: 40rem /*3456px*/;
@@ -243,17 +254,6 @@ nav a:hover {
 .middle-content .parallax-middle .right-content {
   padding: 3rem;
   width: 50%;
-}
-.middle-content .parallax-middle .right-content input[type="text"] {
-  width: 60%;
-  padding: 1.2rem 2rem;
-  margin: 0.8rem 0rem;
-  margin-left: 2rem;
-  display: inline-block;
-  border: 0.1rem solid #C63E60;
-  border-radius: 0.8rem;
-  box-sizing: border-box;
-  background-color: #DC98B1;
 }
 body {
   margin: 0 auto;
