@@ -147,7 +147,7 @@ nav {
   padding-bottom: 0rem;
 }
 nav .logo {
-  height: 9rem;
+  height: 8.5rem;
   margin-right: 70%;
 }
 nav a {
@@ -161,48 +161,100 @@ nav a {
 nav a:hover {
   color: #DC98B1;
 }
-.parallax {
-  height: 3456px;
-  background: url("../assets/img/concert-984237.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-}
 .top-content {
   background-color: #C63E60;
-  margin-top: 50rem;
+  margin-top: 8rem;
   font-family: sans-serif;
+  z-index: 10;
 }
 .top-content h1 {
   font-size: 4rem;
   margin: 2rem;
   font-family: 'Stylish', sans-serif;
   color: #FDFFFC;
-  text-shadow: -1px -1px 0 #DC98B1, 1px -1px 0 #DC98B1, -1px 1px 0 #DC98B1, 1px 1px 0 #DC98B1;
+  text-shadow: -1px -1px 0 #C63E60, 1px -1px 0 #C63E60, -1px 1px 0 #C63E60, 1px 1px 0 #C63E60;
 }
 .top-content p {
+  font-size: 1.5rem;
+  font-family: 'Stylish', sans-serif;
+  margin: 2rem;
+  text-align: justify;
+  color: #FDFFFC;
+}
+.top-content .parallax {
+  height: 40rem /*3456px*/;
+  background: url("../assets/img/concert-984237.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+.top-content .parallax .left-content {
+  padding: 3rem;
+  width: 50%;
+}
+.top-content .parallax .left-content input[type="text"] {
+  width: 60%;
+  padding: 1.2rem 2rem;
+  margin: 0.8rem 0rem;
+  margin-left: 2rem;
+  display: inline-block;
+  border: 0.1rem solid #C63E60;
+  border-radius: 0.8rem;
+  box-sizing: border-box;
+  background-color: #DC98B1;
+}
+.top-content .parallax .left-content input[type="submit"] {
+  padding: 1.2rem 2rem;
+  margin: 0.8rem 0rem;
+  border: 0.1rem solid #DC98B1;
+  border-radius: 0.8rem;
+  box-sizing: border-box;
+  background-color: #C63E60;
+}
+.middle-content {
+  z-index: 10;
+}
+.middle-content h1 {
+  font-size: 4rem;
+  margin: 2rem;
+  font-family: 'Stylish', sans-serif;
+  color: #FDFFFC;
+  text-shadow: -1px -1px 0 #C63E60, 1px -1px 0 #C63E60, -1px 1px 0 #C63E60, 1px 1px 0 #C63E60;
+}
+.middle-content p {
+  font-family: 'Stylish', sans-serif;
   font-size: 1.5rem;
   margin: 2rem;
   text-align: justify;
   color: #FDFFFC;
 }
-.top-content .left-content input[type="text"] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
+.middle-content .parallax-middle {
+  height: 40rem /*3456px*/;
+  background: url("../assets/img/airport-2373727.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+.middle-content .parallax-middle .right-content {
+  padding: 3rem;
+  width: 50%;
+}
+.middle-content .parallax-middle .right-content input[type="text"] {
+  width: 60%;
+  padding: 1.2rem 2rem;
+  margin: 0.8rem 0rem;
+  margin-left: 2rem;
   display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  border: 0.1rem solid #C63E60;
+  border-radius: 0.8rem;
   box-sizing: border-box;
   background-color: #DC98B1;
 }
-.top-content .right-content {
-  margin-left: 2rem;
-  width: 50%;
-  height: auto;
-}
 body {
   margin: 0 auto;
+  background-color: #011627;
 }
