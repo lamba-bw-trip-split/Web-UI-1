@@ -154,12 +154,12 @@ nav a {
   padding-top: 3.5rem;
   margin-right: 3rem;
   font-size: 1rem;
-  text-decoration: none;
   font-family: 'Stylish', sans-serif;
   color: #FF9F1C;
 }
 nav a:hover {
   color: #DC98B1;
+  text-decoration: none;
 }
 .top-content {
   background-color: #C63E60;
@@ -217,6 +217,7 @@ nav a:hover {
   z-index: 10;
 }
 .middle-content h1 {
+  padding-top: 5rem;
   font-size: 4rem;
   margin: 2rem;
   font-family: 'Stylish', sans-serif;
