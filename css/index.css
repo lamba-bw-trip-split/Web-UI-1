@@ -141,10 +141,11 @@ nav {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  background-color: #011627;
+  background-color: black;
   padding: 2rem;
   padding-top: 0rem;
   padding-bottom: 0rem;
+  z-index: 9;
 }
 nav .logo {
   height: 8.5rem;
@@ -194,10 +195,12 @@ nav a:hover {
   z-index: 2;
 }
 .top-content .parallax .left-content {
+  filter: none;
   padding: 3rem;
   width: 50%;
 }
 .top-content .parallax .left-content input[type="text"] {
+  filter: none;
   opacity: 0.7;
   width: 60%;
   padding: 1.2rem 2rem;
@@ -209,8 +212,10 @@ nav a:hover {
   box-sizing: border-box;
   background-color: black;
   color: #FDFFFC;
+  z-index: -1;
 }
 .top-content .parallax .left-content input[type="submit"] {
+  filter: none;
   opacity: 0.9;
   padding: 1.2rem 2rem;
   margin: 0.8rem 0rem;
@@ -219,6 +224,7 @@ nav a:hover {
   box-sizing: border-box;
   background-color: #2EC4B6;
   color: #FDFFFC;
+  z-index: -1;
 }
 .top-content .parallax .left-content input[type="submit"]:hover {
   background-color: #FF9F1C;

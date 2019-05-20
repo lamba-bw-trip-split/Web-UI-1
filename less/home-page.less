@@ -26,6 +26,7 @@
 
   .parallax {
     height: 50rem/*3456px*/;
+    // filter: blur(5px);
     background: url("../assets/img/concert-984237.jpg");
     background-attachment: scroll;
     background-position: center;
@@ -34,10 +35,12 @@
     z-index: 2;
 
     .left-content {
+      filter: none;
       padding: 3rem;
       width: 50%;
 
       input[type="text"] {
+        filter: none;
         opacity: 0.7;
         width: 60%;
         padding: 1.2rem 2rem;
@@ -49,9 +52,11 @@
         box-sizing: border-box;
         background-color: black;
         color: @babypowder;
+        z-index: -1;
       }
 
       input[type="submit"] {
+        filter: none;
         opacity: 0.9;
         padding: 1.2rem 2rem;
         margin: 0.8rem 0rem;
@@ -60,6 +65,7 @@
         box-sizing: border-box;
         background-color: @maxbluegreen;
         color: @babypowder;
+        z-index: -1;
 
         &:hover {
           background-color: @brightyellow;
