@@ -1,4 +1,12 @@
+@font-face {
+  font-family: 'Stylish';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Stylish Regular'), local('Stylish-Regular'), url(https://fonts.gstatic.com/s/stylish/v7/m8JSjfhPYriQkk7-TorzcA.ttf) format('truetype');
+}
 /*===== Colors =====*/
+/*===== Fonts =====*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -126,4 +134,28 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #011627;
+  padding: 2rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  margin-bottom: 1rem;
+}
+nav .logo {
+  height: 9rem;
+  margin-right: 3rem;
+}
+nav a {
+  padding-top: 3.5rem;
+  margin-right: 3rem;
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: 'Stylish', sans-serif;
+  color: #FF9F1C;
+}
+body {
+  margin: 0 auto;
 }
