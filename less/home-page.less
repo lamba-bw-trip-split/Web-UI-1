@@ -18,7 +18,7 @@
     font-size: 1.5rem;
     font-family: @main-font;
     margin: 2rem;
-    text-align: justify;
+    text-align: left;
     color: @babypowder;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
       1px 1px 0 black;
@@ -55,7 +55,7 @@
         z-index: -1;
       }
 
-      input[type="submit"] {
+      button {
         filter: none;
         opacity: 0.9;
         padding: 1.2rem 2rem;
@@ -69,6 +69,22 @@
 
         &:hover {
           background-color: @brightyellow;
+        }
+      }
+
+      .sub {
+        margin-top: 0;
+        font-family: s@main-font;
+        font-size: 1.2rem;
+        text-align: left;
+
+        a {
+          margin-left: 0;
+          color: @brightyellow;
+
+          &:hover {
+            color: @brickred;
+          }
         }
       }
     }
@@ -116,6 +132,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+
+    .left {
+      width: 50%;
+    }
 
     .right-content {
       // make right aligned on page
@@ -132,5 +154,11 @@
       text-decoration: none;
       font-family: sans-serif;
     }
+  }
+}
+
+.testimonial-content {
+  .carousel {
+    margin: 5rem;
   }
 }

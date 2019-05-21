@@ -160,7 +160,7 @@ nav a {
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 nav a:hover {
-  color: #DC98B1;
+  color: #C63E60;
   text-decoration: none;
 }
 .top-content {
@@ -181,7 +181,7 @@ nav a:hover {
   font-size: 1.5rem;
   font-family: 'Stylish', sans-serif;
   margin: 2rem;
-  text-align: justify;
+  text-align: left;
   color: #FDFFFC;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
@@ -214,7 +214,7 @@ nav a:hover {
   color: #FDFFFC;
   z-index: -1;
 }
-.top-content .parallax .left-content input[type="submit"] {
+.top-content .parallax .left-content button {
   filter: none;
   opacity: 0.9;
   padding: 1.2rem 2rem;
@@ -226,8 +226,21 @@ nav a:hover {
   color: #FDFFFC;
   z-index: -1;
 }
-.top-content .parallax .left-content input[type="submit"]:hover {
+.top-content .parallax .left-content button:hover {
   background-color: #FF9F1C;
+}
+.top-content .parallax .left-content .sub {
+  margin-top: 0;
+  font-family: s 'Stylish', sans-serif;
+  font-size: 1.2rem;
+  text-align: left;
+}
+.top-content .parallax .left-content .sub a {
+  margin-left: 0;
+  color: #FF9F1C;
+}
+.top-content .parallax .left-content .sub a:hover {
+  color: #C63E60;
 }
 .top-content .parallax a {
   max-width: 100%;
@@ -264,6 +277,11 @@ nav a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+.middle-content .parallax-middle .left {
+  width: 50%;
 }
 .middle-content .parallax-middle .right-content {
   padding: 3rem;
@@ -277,6 +295,66 @@ nav a:hover {
   margin-left: 50%;
   text-decoration: none;
   font-family: sans-serif;
+}
+.testimonial-content .carousel {
+  margin: 5rem;
+}
+.width-100 {
+  width: 100%;
+}
+.border-bottom-grey {
+  border-bottom: 1px solid lightgrey;
+}
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 16px;
+}
+@media (min-width: 1200px) {
+  .carousel {
+    width: 1200px;
+  }
+}
+.carousel .left-button,
+.carousel .right-button {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+  color: #fff;
+  background-color: #333;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.carousel .left-button:hover,
+.carousel .right-button:hover {
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #333;
+}
+.carousel .left-button {
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+}
+.carousel .right-button {
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+}
+.carousel img {
+  width: 100%;
+  display: none;
 }
 body {
   margin: 0 auto;
