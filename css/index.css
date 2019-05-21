@@ -229,6 +229,14 @@ nav a:hover {
 .top-content .parallax .left-content input[type="submit"]:hover {
   background-color: #FF9F1C;
 }
+.top-content .parallax a {
+  max-width: 100%;
+  color: #FDFFFC;
+  font-size: 3rem;
+  text-align: center;
+  margin-left: 50%;
+  text-decoration: none;
+}
 .middle-content {
   z-index: 10;
 }
@@ -264,4 +272,7 @@ nav a:hover {
 body {
   margin: 0 auto;
   background-color: #011627;
+}
+html {
+  scroll-behavior: smooth;
 }

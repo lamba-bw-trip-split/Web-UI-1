@@ -10,8 +10,8 @@
     margin: 2rem;
     font-family: @main-font;
     color: @brightyellow;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black,
-      -1px 1px 0 black, 1px 1px 0 black;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      1px 1px 0 black;
   }
 
   p {
@@ -20,12 +20,12 @@
     margin: 2rem;
     text-align: justify;
     color: @babypowder;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black,
-      -1px 1px 0 black, 1px 1px 0 black;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      1px 1px 0 black;
   }
 
   .parallax {
-    height: 50rem/*3456px*/;
+    height: 50rem /*3456px*/;
     // filter: blur(5px);
     background: url("../assets/img/concert-984237.jpg");
     background-attachment: scroll;
@@ -72,6 +72,15 @@
         }
       }
     }
+
+    a { //animate this arrow (bouncing)
+      max-width: 100%;
+      color: @babypowder;
+      font-size: 3rem;
+      text-align: center;
+      margin-left: 50%;
+      text-decoration: none;
+    }
   }
 }
 
@@ -84,8 +93,8 @@
     margin: 2rem;
     font-family: @main-font;
     color: @babypowder;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black,
-      -1px 1px 0 black, 1px 1px 0 black;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      1px 1px 0 black;
   }
 
   p {
@@ -94,13 +103,13 @@
     margin: 2rem;
     text-align: justify;
     color: @babypowder;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black,
-      -1px 1px 0 black, 1px 1px 0 black;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      1px 1px 0 black;
   }
 
   .parallax-middle {
     // padding-top: 5rem;
-    height: 40rem/*3456px*/;
+    height: 40rem /*3456px*/;
     background: url("../assets/img/airport-2373727.jpg");
     background-attachment: fixed;
     background-position: center;
