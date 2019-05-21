@@ -2,7 +2,7 @@ class CarouselLink {
     constructor(carouselElement) {
         this.carousel = carouselElement;
 
-        this.images = this.carousel.querySelectorAll('img');
+        this.images = this.carousel.querySelectorAll('.card');
 
         this.leftButton = this.carousel.querySelector('.left-button');
         this.rightButton = this.carousel.querySelector('.right-button');

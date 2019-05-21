@@ -270,7 +270,7 @@ nav a:hover {
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 .middle-content .parallax-middle {
-  height: 40rem /*3456px*/;
+  height: 50rem /*3456px*/;
   background: url("../assets/img/airport-2373727.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -306,12 +306,10 @@ nav a:hover {
   border-bottom: 1px solid lightgrey;
 }
 .carousel {
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  height: 500px;
   position: relative;
   overflow: hidden;
   margin-top: 16px;
@@ -352,13 +350,13 @@ nav a:hover {
   right: 25px;
   transform: translate(0, -50%);
 }
-.carousel img {
+.carousel .card {
   width: 100%;
   display: none;
 }
 body {
   margin: 0 auto;
-  background-color: #011627;
+  background-color: black;
 }
 html {
   scroll-behavior: smooth;
