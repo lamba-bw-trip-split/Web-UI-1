@@ -269,6 +269,15 @@ nav a:hover {
   padding: 3rem;
   width: 50%;
 }
+.middle-content .parallax-middle a {
+  max-width: 100%;
+  color: #FDFFFC;
+  font-size: 3rem;
+  text-align: center;
+  margin-left: 50%;
+  text-decoration: none;
+  font-family: sans-serif;
+}
 body {
   margin: 0 auto;
   background-color: #011627;
