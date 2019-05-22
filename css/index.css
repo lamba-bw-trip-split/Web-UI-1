@@ -170,19 +170,11 @@ nav a:hover {
 }
 @media (max-width: 800px) {
   nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
     flex-direction: column;
     align-items: flex-end;
-    background-color: black;
-    padding-top: 0rem;
-    padding-bottom: 1rem;
-    z-index: 9;
+    padding: 1rem;
   }
   nav .logo {
-    height: 8.5rem;
     display: none;
   }
   nav .hamburger {
@@ -192,11 +184,9 @@ nav a:hover {
     display: flex;
   }
   nav a {
+    padding-top: 2rem;
     margin-right: 0rem;
     font-size: 1.5rem;
-    font-family: 'Stylish', sans-serif;
-    color: #FF9F1C;
-    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
     display: none;
   }
   nav a:hover {
