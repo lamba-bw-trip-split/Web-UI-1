@@ -27,7 +27,7 @@
   .parallax {
     height: 45rem /*3456px*/;
     // filter: blur(5px);
-    background: url("../assets/img/concert-984237-min.jpg");
+    background: url("../assets/img/concert-984237.jpg");
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
@@ -74,7 +74,7 @@
 
       .sub {
         margin-top: 0;
-        font-family: s@main-font;
+        font-family: s @main-font;
         font-size: 1.2rem;
         text-align: left;
 
@@ -89,7 +89,8 @@
       }
     }
 
-    a { //animate this arrow (bouncing)
+    a {
+      //animate this arrow (bouncing)
       max-width: 100%;
       color: @babypowder;
       font-size: 3rem;
@@ -145,7 +146,8 @@
       width: 50%;
     }
 
-    a { //animate this arrow (bouncing)
+    a {
+      //animate this arrow (bouncing)
       max-width: 100%;
       color: @babypowder;
       font-size: 3rem;
@@ -170,5 +172,184 @@
     color: @brightyellow;
     text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
       1px 1px 0 black;
+  }
+}
+
+@media @tablet {
+  .top-content {
+    background-color: @brickred;
+    margin-top: 8rem;
+    font-family: sans-serif;
+    z-index: 10;
+
+    h1 {
+      padding-top: 5rem;
+      font-size: 4rem;
+      margin: 2rem;
+      font-family: @main-font;
+      color: @brightyellow;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-family: @main-font;
+      margin: 2rem;
+      text-align: left;
+      color: @babypowder;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black;
+    }
+
+    .parallax {
+      height: 45rem /*3456px*/;
+      // filter: blur(5px);
+      background: url("../assets/img/concert-984237.jpg");
+      background-attachment: scroll;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 2;
+
+      .left-content {
+        filter: none;
+        padding: 3rem;
+        width: 100%;
+
+        input[type="text"] {
+          filter: none;
+          opacity: 0.7;
+          width: 60%;
+          padding: 1.2rem 2rem;
+          margin: 0.8rem 0rem;
+          margin-left: 2rem;
+          display: inline-block;
+          border: 0.1rem solid @babypowder;
+          border-radius: 0.8rem;
+          box-sizing: border-box;
+          background-color: black;
+          color: @babypowder;
+          z-index: -1;
+        }
+
+        button {
+          filter: none;
+          opacity: 0.9;
+          padding: 1.2rem 2rem;
+          margin: 0.8rem 0rem;
+          border: 0.2rem solid black;
+          border-radius: 0.8rem;
+          box-sizing: border-box;
+          background-color: @maxbluegreen;
+          color: @babypowder;
+          z-index: -1;
+
+          &:hover {
+            background-color: @brightyellow;
+          }
+        }
+
+        .sub {
+          margin-top: 0;
+          font-family: s @main-font;
+          font-size: 1.2rem;
+          text-align: left;
+
+          a {
+            margin-left: 0;
+            color: @brightyellow;
+
+            &:hover {
+              color: @brickred;
+            }
+          }
+        }
+      }
+
+      a {
+        //animate this arrow (bouncing)
+        max-width: 100%;
+        color: @babypowder;
+        font-size: 3rem;
+        text-align: center;
+        margin-left: 50%;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .middle-content {
+    z-index: 10;
+
+    h1 {
+      padding-top: 5rem;
+      font-size: 4rem;
+      margin: 2rem;
+      font-family: @main-font;
+      color: @brightyellow;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black;
+    }
+
+    p {
+      font-family: @main-font;
+      font-size: 1.5rem;
+      margin: 2rem;
+      text-align: justify;
+      color: @babypowder;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black;
+    }
+
+    .parallax-middle {
+      // padding-top: 5rem;
+      height: 50rem /*3456px*/;
+      background: url("../assets/img/airport-2373727.jpg");
+      background-attachment: scroll;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 2;
+      display: flex;
+      flex-wrap: wrap;
+
+      .left {
+        width: 0%;
+      }
+
+      .right-content {
+        // make right aligned on page
+        padding: 3rem;
+        width: 100%;
+      }
+
+      a {
+        //animate this arrow (bouncing)
+        max-width: 100%;
+        color: @babypowder;
+        font-size: 3rem;
+        text-align: center;
+        margin-left: 50%;
+        text-decoration: none;
+        font-family: sans-serif;
+      }
+    }
+  }
+
+  .testimonial-content {
+    display: flex;
+    justify-content: center;
+
+    h1 {
+      margin-top: 5rem;
+      // padding-left: 5rem;
+      font-size: 4rem;
+      // margin: 1rem;
+      font-family: @main-font;
+      color: @brightyellow;
+      text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+        1px 1px 0 black;
+    }
   }
 }
