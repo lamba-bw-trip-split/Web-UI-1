@@ -186,8 +186,8 @@ nav a:hover {
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 .top-content .parallax {
-  height: 50rem /*3456px*/;
-  background: url("../assets/img/concert-984237.jpg");
+  height: 45rem /*3456px*/;
+  background: url("../assets/img/concert-984237-min.jpg");
   background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
@@ -258,7 +258,7 @@ nav a:hover {
   font-size: 4rem;
   margin: 2rem;
   font-family: 'Stylish', sans-serif;
-  color: #FDFFFC;
+  color: #FF9F1C;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 .middle-content p {
@@ -296,8 +296,16 @@ nav a:hover {
   text-decoration: none;
   font-family: sans-serif;
 }
-.testimonial-content .carousel {
-  margin: 5rem;
+.testimonial-content {
+  display: flex;
+  justify-content: center;
+}
+.testimonial-content h1 {
+  margin-top: 5rem;
+  font-size: 4rem;
+  font-family: 'Stylish', sans-serif;
+  color: #FF9F1C;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 .width-100 {
   width: 100%;
@@ -306,13 +314,15 @@ nav a:hover {
   border-bottom: 1px solid lightgrey;
 }
 .carousel {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   position: relative;
   overflow: hidden;
-  margin-top: 16px;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 @media (min-width: 1200px) {
   .carousel {
@@ -325,8 +335,8 @@ nav a:hover {
   justify-content: center;
   align-items: none;
   flex-direction: row;
-  color: #fff;
-  background-color: #333;
+  color: black;
+  background-color: #FF9F1C;
   font-size: 40px;
   border-radius: 50%;
   position: absolute;
