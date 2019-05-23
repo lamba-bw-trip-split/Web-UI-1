@@ -194,6 +194,17 @@ nav a:hover {
     text-decoration: none;
   }
 }
+footer {
+  font-family: 'Stylish', sans-serif;
+  font-size: 1.4rem;
+  color: black;
+  background-color: #FF9F1C;
+  padding: 20px 0;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .top-content {
   background-color: #C63E60;
   margin-top: 8rem;
@@ -285,9 +296,9 @@ nav a:hover {
   z-index: 10;
 }
 .middle-content h1 {
-  padding-top: 5rem;
+  padding: 1rem;
   font-size: 4rem;
-  margin: 2rem;
+  margin-left: 2rem;
   font-family: 'Stylish', sans-serif;
   color: #FF9F1C;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
@@ -301,6 +312,107 @@ nav a:hover {
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 .middle-content .parallax-middle {
+  padding-top: 2rem;
+  height: 45rem /*3456px*/;
+  background: url("../assets/img/caucasian-3385071_1920.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+}
+.middle-content .parallax-middle .left {
+  width: 40%;
+}
+.middle-content .parallax-middle .right-content {
+  display: border-box;
+  margin: 4rem;
+  margin-right: 2rem;
+  padding-bottom: 0rem;
+  width: 50%;
+  border: 2px solid #C63E60;
+  border-radius: 1.2rem;
+  background-color: black;
+  opacity: 0.7;
+}
+.middle-content .parallax-middle .right-content p {
+  font-family: 'Stylish', sans-serif;
+  font-size: 1.5rem;
+  margin: 2rem;
+  text-align: justify;
+  color: #FDFFFC;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+.middle-content .parallax-middle a {
+  max-width: 100%;
+  color: #FDFFFC;
+  font-size: 3rem;
+  text-align: center;
+  margin-left: 50%;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.middle-content2 {
+  z-index: 10;
+}
+.middle-content2 h1 {
+  padding-top: 5rem;
+  padding-left: 3rem;
+  font-size: 4rem;
+  margin: 2rem;
+  font-family: 'Stylish', sans-serif;
+  color: #FF9F1C;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+.middle-content2 p {
+  font-family: 'Stylish', sans-serif;
+  font-size: 1.5rem;
+  margin: 5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  text-align: center;
+  color: #FDFFFC;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+.middle-content2 .parallax-middle2 {
+  background-color: #011627;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+}
+.middle-content2 .parallax-middle2 .features .people {
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.middle-content2 .parallax-middle2 .features .people .icon {
+  font-size: 6rem;
+}
+.middle-content3 {
+  z-index: 10;
+}
+.middle-content3 h1 {
+  padding-top: 5rem;
+  font-size: 4rem;
+  margin: 2rem;
+  font-family: 'Stylish', sans-serif;
+  color: #FF9F1C;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+.middle-content3 p {
+  font-family: 'Stylish', sans-serif;
+  font-size: 1.5rem;
+  margin: 2rem;
+  text-align: justify;
+  color: #FDFFFC;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+.middle-content3 .parallax-middle3 {
   height: 50rem /*3456px*/;
   background: url("../assets/img/airport-2373727.jpg");
   background-attachment: fixed;
@@ -311,14 +423,14 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
 }
-.middle-content .parallax-middle .left {
-  width: 50%;
+.middle-content3 .parallax-middle3 .left {
+  width: 100%;
 }
-.middle-content .parallax-middle .right-content {
+.middle-content3 .parallax-middle3 .right-content {
   padding: 3rem;
-  width: 50%;
+  width: 0%;
 }
-.middle-content .parallax-middle a {
+.middle-content3 .parallax-middle3 a {
   max-width: 100%;
   color: #FDFFFC;
   font-size: 3rem;
@@ -337,6 +449,32 @@ nav a:hover {
   font-family: 'Stylish', sans-serif;
   color: #FF9F1C;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+.aboutus {
+  background-color: #011627;
+  padding: 5%;
+  z-index: 10;
+}
+.aboutus h1 {
+  font-size: 4rem;
+  margin: 2rem;
+  font-family: 'Stylish', sans-serif;
+  color: #FF9F1C;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+.aboutus p {
+  font-size: 1.5rem;
+  font-family: 'Stylish', sans-serif;
+  margin: 1rem;
+  color: #FDFFFC;
+  text-align: center;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+.aboutus .people {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
 }
 @media (max-width: 800px) {
   .top-content {
@@ -447,7 +585,7 @@ nav a:hover {
   }
   .middle-content .parallax-middle {
     height: 50rem /*3456px*/;
-    background: url("../assets/img/airport-2373727.jpg");
+    background: url("../assets/img/caucasian-3385071_1920.jpg");
     background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
@@ -477,7 +615,6 @@ nav a:hover {
     justify-content: center;
   }
   .testimonial-content h1 {
-    margin-top: 5rem;
     font-size: 4rem;
     font-family: 'Stylish', sans-serif;
     color: #FF9F1C;
