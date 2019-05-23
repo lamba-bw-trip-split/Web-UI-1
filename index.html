@@ -1,103 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Bootstrap CSS and required scripts -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- My CSS -->
-    <link rel="stylesheet" href="./css/index.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Stylish&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Bootstrap CSS and required scripts -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 
-    <!-- My Components -->
-    <script src="./components/carousel/Carousel.js" async></script>
+  <!-- My CSS -->
+  <link rel="stylesheet" href="./css/index.css" />
+  <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet" />
 
-    <title>trip split</title>
-  </head>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
 
-  <body>
-    <nav>
-      <img class="logo" src="./assets/img/logo_transparent.png" alt="logo" />
-      <a href="#">Home</a>
-      <a href="#">About Us</a>
-    </nav>
+  <!-- My Components -->
+  <script src="./components/carousel/Carousel.js" async></script>
+  <script src="./components/Hamburger.js" async></script>
 
-    <section class="top-content">
-      <div class="parallax">
-        <div class="left-content">
-          <h1>trip split.</h1>
-          <p>we send them the IOUs, so you don't have to</p>
-          <p>
-            lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore.
-          </p>
-          <input type="text" name="email" placeholder="Email" />
-          <input type="submit" value="Sign Up Now" />
-          <br>
-          <br>
-          <br>
-        </div>
-        <a href="#middle">&dArr;</a>
+  <title>trip split</title>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <img class="logo" src="./assets/img/logo_transparent.png" alt="logo" />
+    <span><i class="fas fa-bars hamburger" style="font-size: 3rem; color:#FF9F1C; padding-top: 2rem;"></i></span>
+    <a href="#">Home</a>
+    <a href="#about-us">About Us</a>
+  </nav>
+
+  <!-- Top Content -->
+  <section class="top-content">
+    <div class="parallax">
+      <div class="left-content">
+        <h1>trip split</h1>
+        <p>
+          tired of paying for a friends uber ride or lunch while on vacation and never getting paid back?
+        </p>
+        <p>we send them the IOUs, so you don't have to</p>
+        <input type="text" name="email" placeholder="Email" />
+        <button onclick="window.location.href = 'https://hungry-carson-cb2f6b.netlify.com/signup';">
+          sign up now
+        </button>
+        <p class="sub">
+          already using trip split? <a class="sub" href="https://hungry-carson-cb2f6b.netlify.com/login">sign in</a>
+        </p>
       </div>
-    </section>
+      <a class="arrow" href="#middle">&dArr;</a>
+    </div>
+  </section>
 
-    <section class="middle-content" id="middle">
-      <div class="parallax-middle">
-        <div class="right-content">
-          <h1>we happy?</h1>
-          <p>
-            your bones don't break, mine do. that's clear. your cells react to
-            bacteria and viruses differently than mine. you don't get sick, i
-            do. that's also clear. but for some reason, you and i react the
-            exact same way to water. we swallow it too fast, we choke. we get
-            some in our lungs, we drown. however unreal it may seem, we are
-            connected, you and i. we're on the same curve, just on opposite
-            ends.
-          </p>
-        </div>
-        <a href="#">&dArr;</a>
+  <!-- What We Do -->
+  <section class="middle-content" id="middle">
+    <div class="parallax-middle">
+      <div class="left"></div>
+      <div class="right-content">
+        <h1>what we do</h1>
+        <p>here at trip split our goal is simple. provide our users with the premiere platform for tracking expenses
+          when out having fun.</p>
+        <p>we know that no one wants to fumble around with a spreadsheet or balled up receipts and ious while out
+          traveling with their friends and family. where is the fun in that?</p>
+        <p>we provide our users with an easy interface to track their expenses, so they can enjoy their friends,
+          stress-free.</p>
+        <a class="arrow" href="#test">&dArr;</a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="testimonial-content">
-      <div class="parallax-testimonial">
-        <!-- CAROUSEL COMPONENT -->
-        <div class="carousel">
-          <div class="left-button">
-            <
+  <!-- Features -->
+  <section class="middle-content2" id="middle2">
+    <div class="parallax-middle2">
+      <div class="features">
+        <h1>how it works</h1>
+
+        <div class="people">
+          <div>
+            <p class="icon"><i class="fas fa-mobile-alt"></i></p>
+            <p>create a trip</p>
           </div>
-          <img src="#" />
-          <img src="#" />
-          <img src="#" />
-          <img src="#" />
-          <div class="right-button">></div>
+
+          <div>
+            <p class="icon"><i class="fas fa-users"></i></p>
+            <p>add your friends</p>
+          </div>
+
+          <div>
+            <p class="icon"><i class="fas fa-table"></i></p>
+            <p>log who paid for what</p>
+          </div>
+
+          <div>
+            <p class="icon"><i class="fas fa-route"></i></p>
+            <p>we take care of the rest!</p>
+          </div>
+
         </div>
       </div>
-    </section>
-  </body>
+    </div>
+  </section>
+
+  <!-- Middle Content, p.3 -->
+  <!-- <section class="middle-content3" id="middle3">
+    <div class="parallax-middle3">
+      <div class="left">
+        <h1>we happy? p3</h1>
+        <p>
+          your bones don't break, mine do. that's clear. your cells react to
+          bacteria and viruses differently than mine. you don't get sick, i
+          do. that's also clear. but for some reason, you and i react the
+          exact same way to water. we swallow it too fast, we choke. we get
+          some in our lungs, we drown. however unreal it may seem, we are
+          connected, you and i. we're on the same curve, just on opposite
+          ends.
+        </p>
+      </div>
+      <div class="right-content"></div>
+      <a href="#test">&dArr;</a>
+    </div>
+  </section> -->
+
+  <!-- Testimonial Content -->
+  <section class="testimonial-content" id="test">
+    <div class="parallax-testimonial">
+      <h1>testimonials</h1>
+      <!-- CAROUSEL COMPONENT -->
+      <div class="carousel">
+        <div class="left-button">
+          < </div> <div class="card">
+            <img class="card-img-top" src="./assets/img/black-man-3532117_1920.jpg" alt="Card image" />
+            <div class="card-body">
+              <h4 class="card-title" style="font-family: Stylish; color: black;">
+                Chris
+              </h4>
+              <p class="card-text" style="font-family: Stylish; font-size: 1.5rem; color: black;">
+                This app saved my marriage. My wife's brother never pays me
+                back. Now he's being held accountable.
+              </p>
+            </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top" src="./assets/img/crazy-3126441_1920.jpg" alt="Card image" />
+          <div class="card-body">
+            <h4 class="card-title" style="font-family: Stylish; color: black;">
+              Jane
+            </h4>
+            <p class="card-text" style="font-family: Stylish; font-size: 1.5rem; color: black;">
+              OMG YASSSSSSS!!!! Where was this app before I rage-screamed at
+              all my friends last night?????
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img-top" src="./assets/img/credit-card-1599787_1920.jpg" alt="Card image" />
+          <div class="card-body">
+            <h4 class="card-title" style="font-family: Stylish; color: black;">
+              John
+            </h4>
+            <p class="card-text" style="font-family: Stylish; font-size: 1.5rem; color: black;">
+              This app is amazing. It makes traveling with my friends so much
+              easier! Thanks, trip split!
+            </p>
+          </div>
+        </div>
+
+        <div class="right-button">></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="aboutus" id="about-us">
+    <h1>about us</h1>
+    <div class="people">
+      <div>
+        <img src="./assets/img/jacob.png" alt="Jacob">
+        <p>Jacob Seppanen</p>
+        <p>Team Lead</p>
+        <p style="font-size: 3rem;"> <a href="https://github.com/jbseppanen" target="_blank"><i class="fab fa-github"></i></a> <a
+            href="https://twitter.com/JacobSeppanen" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/jacobseppanen/" target="_blank"><i class="fab fa-linkedin"></i></a> </p>
+      </div>
+      <div>
+        <img src="./assets/img/alexis.png" alt="Alexis">
+        <p>Alexis Carr</p>
+        <p>UI Developer</p>
+        <p style="font-size: 3rem;"> <a href="https://github.com/alexisjcarr" target="_blank"><i class="fab fa-github"></i></a> <a
+            href="https://twitter.com/THEAlexisCarr" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/alexis-j-carr-17a20865/" target="_blank"><i class="fab fa-linkedin"></i></a> </p>
+      </div>
+      <div>
+        <img src="./assets/img/navid.png" alt="Navid">
+        <p>Navid Karami</p>
+        <p>Front-End Developer</p>
+        <p style="font-size: 3rem;"> <a href="https://github.com/navidgs" target="_blank"><i class="fab fa-github"></i></a> <a
+            href="https://twitter.com/navidivangsz" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/navid-karami-z/" target="_blank"><i class="fab fa-linkedin"></i></a> </p>
+      </div>
+      <div>
+        <img src="./assets/img/omar.png" alt="Omar">
+        <p>Omar Okla</p>
+        <p>Back-End Developer</p>
+        <p style="font-size: 3rem;"> <a href="https://github.com/ok1a" target="_blank"><i class="fab fa-github"></i></a> <a
+            href="https://twitter.com/omar_okla" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/omarokla/" target="_blank"><i class="fab fa-linkedin"></i></a> </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>copyright trip split 2019</p>
+  </footer>
+</body>
+
 </html>
